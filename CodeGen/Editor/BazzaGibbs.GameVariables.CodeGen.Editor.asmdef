@@ -1,0 +1,14 @@
+{
+    "name": "com.bazzagibbs.gamevariables.CodeGen.Editor",
+    "rootNamespace": "BazzaGibbs.GameVariables",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,21 @@
+﻿###Game Variables/Runtime/Game Vars/$TYPE.NAME$Var.cs
+// Generated script for BazzaGibbs.GameVariables package
+
+using System;
+using UnityEngine;
+
+namespace $NAMESPACE$ {
+    [CreateAssetMenu(menuName = "Game Variable/$TYPE.NAME$ Variable", fileName = "New$TYPE.NAME$Var", order = $CREATE_MENU_ORDER$)]
+    public class $TYPE.NAME$Var : ScriptableObject {
+        [SerializeField] private $TYPE$ m_SerializedValue;      // internal value exposed to editor + serialized
+        [NonSerialized] public $TYPE$ val;                      // value exposed to scripts, not serialized
+        
+        private void OnValidate() {
+            val = m_SerializedValue;
+        }
+        
+        private void Awake() {
+            val = m_SerializedValue;
+        }
+    }
+}

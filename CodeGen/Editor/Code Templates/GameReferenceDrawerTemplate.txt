@@ -1,0 +1,10 @@
+﻿###Game Variables/Editor/Game Reference Drawers/$TYPE.NAME$RefDrawer.cs
+// Generated script for BazzaGibbs.GameVariables package
+
+using UnityEditor;
+using BazzaGibbs.GameVariables;
+
+namespace $NAMESPACE$ {
+    [CustomPropertyDrawer(typeof($TYPE.NAME$Ref))]
+    class $TYPE.NAME$RefDrawer : GameRefDrawer {}
+}

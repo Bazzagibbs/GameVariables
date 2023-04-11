@@ -8,7 +8,7 @@
     "email": "bazzagibbsdev@gmail.com",
     "url": "https://bazzagibbs.itch.io"
   },
-  "type": "module",
+  "type": "library",
   "keywords": [
     "Game",
     "Variable",
@@ -22,5 +22,6 @@
       "description": "Demo usage of Game Variables with UI and GameObjects",
       "path": "Samples~/GameVariableDemo"
     }
-  ]
+  ],
+  "hideInEditor": false
 }

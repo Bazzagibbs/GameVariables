@@ -12,5 +12,9 @@ namespace BazzaGibbs.GameVariables {
         private void OnValidate() {
             val = m_SerializedValue;
         }
+        
+        private void Awake() {
+            val = m_SerializedValue;
+        }
     }
 }

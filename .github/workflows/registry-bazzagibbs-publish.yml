@@ -14,7 +14,7 @@ jobs:
           registry-url: 'https://registry.bazzagibbs.com'
       - run: git config --global user.name "${{ github.actor }}" 
       - run: git config --global user.email "github-action-${{ github.actor }}@users.noreply.github.com"
-      - run: npm version ${{ github.event.release.tag_name }}
+      - run: npm version ${{ github.event.release.tag_name }} --allow-same-version
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.BAZZAGIBBS_REGISTRY_NPM_TOKEN }}

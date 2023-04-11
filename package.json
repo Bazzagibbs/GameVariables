@@ -1,19 +1,26 @@
 {
   "name": "com.bazzagibbs.gamevariables",
   "version": "1.0.0",
-  "description": "",
+  "description": "ScriptableObject Variable system for easy cross-scene interactions.\n\nAn implementation of the architecture described by Ryan Hipple at Unite 2017 - Game Architecture with Scriptable Objects.",
   "displayName": "Game Variables",
   "author": {
     "name": "BazzaGibbs",
     "email": "bazzagibbsdev@gmail.com",
     "url": "https://bazzagibbs.itch.io"
   },
-  "type": "template",
+  "type": "module",
   "keywords": [
     "Game",
     "Variable",
     "Variables",
     "Scriptable",
     "ScriptableObject"
+  ],
+  "samples": [
+    {
+      "displayName": "Game Variable Demo",
+      "description": "Demo usage of Game Variables with UI and GameObjects",
+      "path": "Samples~/GameVariableDemo"
+    }
   ]
 }

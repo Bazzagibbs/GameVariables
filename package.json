@@ -1,0 +1,19 @@
+{
+  "name": "com.bazzagibbs.gamevariables",
+  "version": "1.0.0",
+  "description": "",
+  "displayName": "Game Variables",
+  "author": {
+    "name": "BazzaGibbs",
+    "email": "bazzagibbsdev@gmail.com",
+    "url": "https://bazzagibbs.itch.io"
+  },
+  "type": "template",
+  "keywords": [
+    "Game",
+    "Variable",
+    "Variables",
+    "Scriptable",
+    "ScriptableObject"
+  ]
+}

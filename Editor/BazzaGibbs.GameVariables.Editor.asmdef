@@ -1,0 +1,18 @@
+{
+    "name": "BazzaGibbs.GameVariables.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8005e16353157d54b9557efbe9c3b735"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,5 +1,5 @@
 {
-    "name": "com.bazzagibbs.gamevariables.CodeGen.Editor",
+    "name": "BazzaGibbs.GameVariables.CodeGen.Editor",
     "rootNamespace": "BazzaGibbs.GameVariables",
     "references": [],
     "includePlatforms": [],

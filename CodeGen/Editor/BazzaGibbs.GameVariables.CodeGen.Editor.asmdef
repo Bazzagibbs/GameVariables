@@ -2,7 +2,9 @@
     "name": "BazzaGibbs.GameVariables.CodeGen.Editor",
     "rootNamespace": "BazzaGibbs.GameVariables",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

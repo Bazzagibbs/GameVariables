@@ -36,5 +36,3 @@ public class Player : MonoBehaviour {
 ## Custom Game Variable Types
 
 Custom Game Variable types can be generated using the CodeGen tool provided: `Tools > Game Variables > Create New GameVariable Type`
-
-Fill out the wizard fields with your C# namespace, the data type you want to store in the variable, and the Create Menu sorting order (default ordering: 2).

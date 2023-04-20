@@ -7,9 +7,7 @@ using UnityEngine;
 
 namespace BazzaGibbs.GameVariables {
     public class CodeGenWizard : ScriptableWizard {
-        public const string WizardHelp = "NAMESPACE: Your project's C# namespace. If you don't have one, try \"MyProject\".\n"
-                                       + "TYPE: The class you want to store in a GameVariable, exactly as it would appear in code. E.g. \"MyClass\", \"float\".\n"
-                                       + "CREATE_MENU_ORDER: (integer) The order in which your custom GameVariable should appear under the Create Asset > Game Variable menu.";
+        public const string WizardHelp = "TYPE: The class you want to store in a GameVariable, exactly as it would appear in code. E.g. \"MyClass\", \"float\".\n";
         
         public const string PackageName = "com.bazzagibbs.gamevariables";
         public const string WizardTitle = "Create New GameVariable Type";
@@ -100,19 +98,22 @@ namespace BazzaGibbs.GameVariables {
                 }
 
                 if (batchCount == 0) {
-                    if(macroDef.replaceWithBatch.Count != 0){
-                        batchCount = macroDef.replaceWithBatch.Count;
-                        continue;
+                    if(macroDef.replaceWithBatch.Count == 0){
+                        Debug.LogError($"CodeGen: Batch generation invalid, macro has no entries. Problem macro: {macroDef.macroName}");
+                        return -1;
                     }
+                    
+                    batchCount = macroDef.replaceWithBatch.Count;
+                    continue;
                 }
 
                 if (batchCount == macroDef.replaceWithBatch.Count) continue;
                 
                 Debug.LogError($"CodeGen: Batch generation invalid. Please make sure all batch macros have the same number of entries. Problem macro: {macroDef.macroName}"); 
-                return 0;
+                return -1;
             }
 
-            return batchCount;
+            return batchCount == 0 ? 1 : batchCount;
         }
 
         Dictionary<string, string> GetBatchReplacements(int index) {

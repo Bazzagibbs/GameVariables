@@ -1,10 +1,10 @@
-﻿###Game Variables/Runtime/Game Refs/$TYPE.NAME$Ref.cs
+﻿###Game Variables/Built-in/Runtime/Game Refs/$TYPE.NAME$Ref.cs
 // Generated script for BazzaGibbs.GameVariables package
 
 using System;
 using UnityEngine;
 
-namespace BazzaGibbs.GameVariables.Custom {
+namespace BazzaGibbs.GameVariables {
     [Serializable]
     public class $TYPE.NAME$Ref {
         public bool useConstantVal;

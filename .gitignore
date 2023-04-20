@@ -5,6 +5,7 @@
 
 # CodeGen templates for built-in types
 *.builtin.txt
+*.builtin.txt.meta
 
 /[Ll]ibrary/
 /[Tt]emp/
